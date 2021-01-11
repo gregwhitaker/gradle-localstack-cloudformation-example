@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: >
+  Creates resources for the gradle-localstack-cloudformation-example application. Named stack example-stack.
+Resources:
+  ProductChangeNotificationQueue:
+    Type: "AWS::SQS::Queue"
+    Properties:
+      QueueName: "example-queue"
+      MessageRetentionPeriod: 1209600
+      MaximumMessageSize: 262144
