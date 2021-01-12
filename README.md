@@ -6,6 +6,8 @@ An example of working with mock AWS CloudFormation using [LocalStack](https://gi
 In this example you will see how to configure a mock AWS environment, defined in CloudFormation, using LocalStack and
 the Gradle LocalStack Plugin.
 
+**Note:** CloudFormation support in LocalStack is very limited. Only certain resources can be created and many functions are not supported. For a detailed list of supported CloudFormation resources and functions please refer to the [LocalStack](https://github.com/localstack/localstack) documentation.
+
 ## Building the Example
 Run the following command to build the example:
 
